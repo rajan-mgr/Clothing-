@@ -1,0 +1,103 @@
+/* src/styles/Home.css */
+
+.home-info {
+  padding: 70px;
+  background-color: #f9f9f9;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.home-text {
+  padding: 40px;
+  margin-bottom: 600px;
+  font-size: clamp(3.4rem, 4vw + 1rem, 5.2rem);
+  font-family: Bebas Neue, sans-serif;
+  line-height: 1;
+  flex: 1;
+  text-align: left;
+}
+
+.home-text h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.home-text p {
+  font-size: 20px;
+  color: #555;
+}
+
+/* IMAGE CONTAINER */
+.home-images {
+  position: relative;
+  left: 400px;
+  bottom: 100px;
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* COMMON IMAGE STYLE */
+.home-images img {
+  display: block;
+  object-fit: cover;
+  filter: grayscale(100%);       /* Default black & white */
+  transition: 0.3s ease-in-out;  /* Smooth hover animation */
+}
+
+/* ON HOVER → show color */
+.home-images img:hover {
+  filter: grayscale(0%);
+}
+
+/* INDIVIDUAL IMAGE STYLES */
+
+/* First image */
+.img1 {
+  width: 160px;
+  height: 200px;
+  border-radius: 50px;
+  position: relative;
+  right: 600px;
+}
+
+/* Second image */
+.img2 {
+  width: 160px;
+  height: 200px;
+  border-radius: 0 0 50px 50px;
+  position: relative;
+  right: 600px;
+}
+
+/* Third image */
+.img3 {
+  width: 260px;
+  height: 399px;
+  border-radius: 90px 90px 0 0;
+  position: relative;
+  bottom: 450px;
+  right: 300px;
+}
+
+/* BUTTON */
+.home-btn {
+  font-size: 15px;
+  padding: 15px;
+  display: inline-block;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+}
